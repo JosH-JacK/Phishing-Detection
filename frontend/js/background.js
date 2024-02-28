@@ -3,7 +3,7 @@ var legitimatePercents = {};
 var isPhish = {};
 
 function fetchLive(callback) {
-  fetch('https://raw.githubusercontent.com/neokd/PhishingDetection/main/json/classifier.json?token=GHSAT0AAAAAACOSBIPF4YNDB5XQLT7PGVPGZOZWWWA', { 
+  fetch('https://raw.githubusercontent.com/JosH-JacK/Phishing-Detection/main/json/classifier.json?token=GHSAT0AAAAAACOSBIPFS3GWQEA73SKLPAIYZO7AJJA', { 
   method: 'GET'
   })
   .then(function(response) { 
