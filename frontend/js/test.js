@@ -1,5 +1,5 @@
 function test_model() {
-  $.getJSON("https://raw.githubusercontent.com/neokd/PhishingDetection/main/json/classifier.json?token=GHSAT0AAAAAACOSBIPFVP4PGBER4QXKPGCSZO67CQA", function(clfdata) {
+  $.getJSON("https://raw.githubusercontent.com/JosH-JacK/Phishing-Detection/main/json/classifier.json?token=GHSAT0AAAAAACOSBIPFS3GWQEA73SKLPAIYZO7AJJA", function(clfdata) {
     var rf = random_forest(clfdata);
     $.getJSON("https://raw.githubusercontent.com/JosH-JacK/Phishing-Detection/main/json/testdata.json?token=GHSAT0AAAAAACOSBIPFIYZ4C4WX7FQKYFUCZO7AG7Q", function(testdata) {
       var X = testdata['X_test'];
